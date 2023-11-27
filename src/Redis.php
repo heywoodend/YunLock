@@ -189,7 +189,7 @@ class Redis extends Base
 
 		//###### Fri Nov 24 17:40:40 CST 2023 heywooden 设置最大过期时间
 		$max_execution_time = ini_get('max_execution_time');
-		$this->handler->expire($this->name, $this->lockExpire > $max_execution_time ? $this->lockExpire : $max_execution_time);
+		$this->handler->expire($this->name, ($this->lockExpire > $max_execution_time) ? $this->lockExpire : $max_execution_time);
 		return true;
 	}
 
