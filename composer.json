@@ -1,5 +1,5 @@
 {
-	"name": "yurunsoft/yurun-lock",
+	"name": "heywooden/yunlock",
 	"type": "project",
     "autoload": {
         "psr-4": {
