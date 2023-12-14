@@ -187,7 +187,7 @@ class Redis extends Base
 			}
 		}
 
-		//###### Fri Nov 24 17:40:40 CST 2023 heywooden 设置最大过期时间,这里对“不限超时”进行一个“最大超时”处理
+		//###### Fri Nov 24 17:40:40 CST 2023 heywooden 设置最大过期时间,这里对“不限时”进行“限时”处理
 		$max_execution_time = ini_get('max_execution_time');
 		if($max_execution_time <= 0)
 		{
