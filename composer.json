@@ -1,0 +1,31 @@
+{
+    "license": "MIT",
+	"name": "heywooden/yunlock",
+	"type": "library",
+    "description": "PHP阻塞锁和非阻塞锁机制，内置解决并发锁重复执行的方案。目前支持文件File、Redis、Memcache、Memcached。",
+    "keywords" : [
+        "php",
+        "file",
+        "redis",
+        "memcache",
+        "memcached",
+        "lock"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yurun\\Until\\Lock\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
